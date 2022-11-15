@@ -57,5 +57,13 @@ namespace Econosim
         {
 
         }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            label1.Text = dataGridView1.SelectedCells[0].Value.ToString();
+            label7.Text = dataGridView1.SelectedCells[1].Value.ToString();
+            label8.Text = dataGridView1.SelectedCells[2].Value.ToString();
+            label9.Text = dataGridView1.SelectedCells[3].Value.ToString();
+        }
     }
 }
