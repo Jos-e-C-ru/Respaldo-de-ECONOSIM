@@ -64,6 +64,12 @@
     <Compile Include="AdmParticipantes.Designer.cs">
       <DependentUpon>AdmParticipantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Calendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario.Designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </Compile>
     <Compile Include="circlebutton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdmParticipantes.resx">
       <DependentUpon>AdmParticipantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="compesacion y beneficios %28imprimir%29.resx">
       <DependentUpon>compesacion y beneficios %28imprimir%29.cs</DependentUpon>

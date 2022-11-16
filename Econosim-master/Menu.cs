@@ -160,5 +160,12 @@ namespace Econosim
                 MessageBox.Show("USTED NO CUENTA CON LOS PERSMISOS DE ADMINISTRADOR", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form calendario = new Calendario();
+            calendario.Show();
+            this.Hide();
+        }
     }
 }
