@@ -41,8 +41,15 @@ namespace Econosim
 
         private void button6_Click(object sender, EventArgs e)
         {
+            InicioSesión.idusuario = "";
+            InicioSesión.nombre = "";
+            InicioSesión.apellido = "";
+            InicioSesión.correo = "";
+            InicioSesión.equipo = "";
+            InicioSesión.tipo = "";
             this.Close();
             inicio.Show();
+
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -77,12 +84,14 @@ namespace Econosim
 
         private void btnMateriales_Click(object sender, EventArgs e)
         {
-
+            Form materiales = new Materiasles_1.Form1();
+            materiales.Show();
+            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form frm = new Form1();
+            Form frm = new Materiasles_1.Form1();
             frm.Show();
             this.Hide();
             

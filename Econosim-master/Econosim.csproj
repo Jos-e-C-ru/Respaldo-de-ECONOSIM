@@ -166,17 +166,17 @@
     <Compile Include="insalacion de produccion %28imprimir%291.Designer.cs">
       <DependentUpon>insalacion de produccion %28imprimir%291.cs</DependentUpon>
     </Compile>
-    <Compile Include="Materiales 1.1.cs">
+    <Compile Include="Materiales1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Materiales 1.1.designer.cs">
-      <DependentUpon>Materiales 1.1.cs</DependentUpon>
+    <Compile Include="Materiales1.designer.cs">
+      <DependentUpon>Materiales1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Materiales 1.2.cs">
+    <Compile Include="Materiales2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Materiales 1.2.designer.cs">
-      <DependentUpon>Materiales 1.2.cs</DependentUpon>
+    <Compile Include="Materiales2.designer.cs">
+      <DependentUpon>Materiales2.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -309,11 +309,11 @@
     <EmbeddedResource Include="insalacion de produccion %28imprimir%291.resx">
       <DependentUpon>insalacion de produccion %28imprimir%291.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Materiales 1.1.resx">
-      <DependentUpon>Materiales 1.1.cs</DependentUpon>
+    <EmbeddedResource Include="Materiales1.resx">
+      <DependentUpon>Materiales1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Materiales 1.2.resx">
-      <DependentUpon>Materiales 1.2.cs</DependentUpon>
+    <EmbeddedResource Include="Materiales2.resx">
+      <DependentUpon>Materiales2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

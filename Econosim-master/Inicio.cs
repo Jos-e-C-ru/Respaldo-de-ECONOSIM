@@ -20,7 +20,7 @@ namespace Econosim
         }
 
         CL_ConexiónBD conexion = new CL_ConexiónBD();
-        SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+        SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
 
         public void logear(string usuarioy, string contrasena)
         {
@@ -119,6 +119,7 @@ namespace Econosim
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
@@ -131,7 +132,7 @@ namespace Econosim
 
            logear(this.txtUsuario.Text, this.txtContrasena.Text);
 
-            SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+            SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
             String query = "SELECT * FROM usuario WHERE nombre_de_usuario='" + txtUsuario.Text + "'AND contrasena='" + txtContrasena.Text+ "'";
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();

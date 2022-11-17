@@ -143,6 +143,7 @@ namespace Materiasles_1
         {
             base.OnHandleCreated(e);
             this.Parent.BackColorChanged += new EventHandler(Container_BackColorChanged);
+
         }
 
         private void Container_BackColorChanged(object sender, EventArgs e)

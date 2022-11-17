@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +17,8 @@ namespace Econosim
         {
             InitializeComponent();
         }
+
+        CL_ConexiónBD conexion = new CL_ConexiónBD();
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
@@ -57,6 +60,13 @@ namespace Econosim
         private void pictureBox5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Equipos_Shown(object sender, EventArgs e)
+        {
+            conexion.abrir();
+            string equipos = InicioSesión.equipo;
+            conexion.cargarDatosEquipo(dataGridView1, "usuario", InicioSesión.equipo);
         }
     }
 }
