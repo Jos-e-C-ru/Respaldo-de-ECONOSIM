@@ -86,7 +86,7 @@ namespace Econosim
                 }
                 else
                 {
-                    using (SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
+                    using (SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
                     {
 
                         SqlCommand cmd = new SqlCommand("insert into compensacion (descripcion_de_recompensa, valor_recompensa, fecha_recompensa) values ('" + textBox1.Text + "','" + Convert.ToUInt32(textBox2.Text) + "','" + textBox4.Text + "')", con);

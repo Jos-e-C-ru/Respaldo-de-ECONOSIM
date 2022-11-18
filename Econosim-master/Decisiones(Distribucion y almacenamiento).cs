@@ -65,7 +65,7 @@ namespace Econosim
                 }
                 else
                 {
-                    using (SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
+                    using (SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
                     {
                         SqlCommand cmd = new SqlCommand("INSERT INTO distribucion_y_almacenamiento (descripcion_de_almacenamiento, localizacion) values ('" + txt_almacenamiento.Text + "','" + txt_localizacion.Text + "')", con);
 

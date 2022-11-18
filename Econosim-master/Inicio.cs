@@ -130,7 +130,7 @@ namespace Econosim
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-           logear(this.txtUsuario.Text, this.txtContrasena.Text);
+           //logear(this.txtUsuario.Text, this.txtContrasena.Text);
 
             SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
             String query = "SELECT * FROM usuario WHERE nombre_de_usuario='" + txtUsuario.Text + "'AND contrasena='" + txtContrasena.Text+ "'";

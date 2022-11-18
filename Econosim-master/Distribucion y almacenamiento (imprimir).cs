@@ -19,7 +19,7 @@ namespace Econosim
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+        SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
 
         private void Distribucion_y_almacenamiento__imprimir__Load(object sender, EventArgs e)
         {

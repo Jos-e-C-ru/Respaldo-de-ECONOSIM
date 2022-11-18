@@ -18,7 +18,7 @@ namespace Econosim
             InitializeComponent();
         }
         CL_ConexiónBD conexion = new CL_ConexiónBD();
-        SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+        SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
         SqlCommand cmd;
         public int i;
 
