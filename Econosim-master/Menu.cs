@@ -16,6 +16,7 @@ namespace Econosim
         //String nombre_usuario;
 
         Inicio inicio = new Inicio();
+        InicioSesión inicioSesión = new InicioSesión();
         private string v;
 
         public Menu(/*String usuario*/)
@@ -31,7 +32,7 @@ namespace Econosim
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            lblBienvenida.Text = ("Bienvenido, " + InicioSesión.nombre + " " + InicioSesión.apellido);
+            //lblBienvenida.Text = ("Bienvenido, " + InicioSesión.nombre + " " + InicioSesión.apellido);
         }
 
         private void panel10_Paint(object sender, PaintEventArgs e)

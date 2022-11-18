@@ -13,11 +13,16 @@ namespace Econosim
 {
     public partial class resultado_informe_de_mercado_ : Form
     {
-        string SSCadenaConexion = "Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ";
+        SqlConnection con = new SqlConnection("server= localhost;integrated security=True; database = proyecto_grupo_#3");
+
+        string SSCadenaConexion = "server= localhost;integrated security=True; database = proyecto_grupo_#3";
+
         public resultado_informe_de_mercado_()
         {
             InitializeComponent();
         }
+
+
 
         private void resultado_informe_de_mercado__Load(object sender, EventArgs e)
         {
