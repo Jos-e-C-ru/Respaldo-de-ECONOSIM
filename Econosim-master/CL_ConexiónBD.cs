@@ -14,7 +14,7 @@ namespace Econosim
         SqlDataAdapter da;
         DataTable dt;
 
-        string conexion = "Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ";
+        string conexion = "Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ";
 
 
 
@@ -47,6 +47,25 @@ namespace Econosim
                 {
                     Convert.ToString(dgv);
                     da = new SqlDataAdapter("SELECT * FROM " + tabla, conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pueden cargar los datos" + ex.Message);
+            }
+        }
+
+
+        public void cargarDatosEquipo(DataGridView dgv, String tabla, String equipo)
+        {
+            try
+            {
+                {
+                    Convert.ToString(dgv);
+                    da = new SqlDataAdapter("SELECT nombre, apellido, nombre_de_usuario, emali, numero_de_grupo FROM " + tabla + " WHERE numero_de_grupo = " + equipo + ";", conexion);
                     dt = new DataTable();
                     da.Fill(dt);
                     dgv.DataSource = dt;

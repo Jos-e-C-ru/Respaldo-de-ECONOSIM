@@ -15,7 +15,7 @@ namespace Econosim
     {
         
 
-        SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+        SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
         public Decisiones__Instalaciones_de_produccion_()
         {
             
