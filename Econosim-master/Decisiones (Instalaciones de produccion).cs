@@ -116,7 +116,7 @@ namespace Econosim
 
                 else
                 {
-                    using (SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
+                    using (SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
                     {
                         SqlCommand cmd = new SqlCommand("Insert Into instalacion_de_produccion (Descripcion_de_instalacion_de_produccion, valor_de_instalacion, ID_produccion, almacenamiento_ID) values ('" + txt_instalacion.Text + "','" + Convert.ToInt32(txt_valor.Text) + "','" + Convert.ToInt32(comboBox1.Text) + "','" + Convert.ToInt32(comboBox2.Text) + "')", con);
 

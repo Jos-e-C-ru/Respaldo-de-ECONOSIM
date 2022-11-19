@@ -30,8 +30,6 @@ namespace Econosim
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Equipos));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -44,8 +42,8 @@ namespace Econosim
             this.circlebutton2 = new Materiasles_1.circlebutton();
             this.tabFechas = new System.Windows.Forms.TabPage();
             this.tabEquipo = new System.Windows.Forms.TabPage();
-            this.TabControlEquipos = new System.Windows.Forms.TabControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TabControlEquipos = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -54,27 +52,9 @@ namespace Econosim
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel9.SuspendLayout();
             this.tabEquipo.SuspendLayout();
-            this.TabControlEquipos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.TabControlEquipos.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(742, 185);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 24);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.Text = "Equipo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(340, 187);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 20);
-            this.textBox1.TabIndex = 27;
             // 
             // pictureBox6
             // 
@@ -213,7 +193,7 @@ namespace Econosim
             this.tabFechas.Margin = new System.Windows.Forms.Padding(2);
             this.tabFechas.Name = "tabFechas";
             this.tabFechas.Padding = new System.Windows.Forms.Padding(2);
-            this.tabFechas.Size = new System.Drawing.Size(505, 273);
+            this.tabFechas.Size = new System.Drawing.Size(499, 273);
             this.tabFechas.TabIndex = 3;
             this.tabFechas.Text = "Fechas";
             this.tabFechas.UseVisualStyleBackColor = true;
@@ -225,22 +205,10 @@ namespace Econosim
             this.tabEquipo.Margin = new System.Windows.Forms.Padding(2);
             this.tabEquipo.Name = "tabEquipo";
             this.tabEquipo.Padding = new System.Windows.Forms.Padding(2);
-            this.tabEquipo.Size = new System.Drawing.Size(499, 273);
+            this.tabEquipo.Size = new System.Drawing.Size(581, 273);
             this.tabEquipo.TabIndex = 2;
             this.tabEquipo.Text = "Equipo";
             this.tabEquipo.UseVisualStyleBackColor = true;
-            // 
-            // TabControlEquipos
-            // 
-            this.TabControlEquipos.Controls.Add(this.tabEquipo);
-            this.TabControlEquipos.Controls.Add(this.tabFechas);
-            this.TabControlEquipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TabControlEquipos.Location = new System.Drawing.Point(340, 251);
-            this.TabControlEquipos.Margin = new System.Windows.Forms.Padding(2);
-            this.TabControlEquipos.Name = "TabControlEquipos";
-            this.TabControlEquipos.SelectedIndex = 0;
-            this.TabControlEquipos.Size = new System.Drawing.Size(507, 302);
-            this.TabControlEquipos.TabIndex = 13;
             // 
             // dataGridView1
             // 
@@ -253,8 +221,20 @@ namespace Econosim
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(499, 273);
+            this.dataGridView1.Size = new System.Drawing.Size(581, 273);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // TabControlEquipos
+            // 
+            this.TabControlEquipos.Controls.Add(this.tabEquipo);
+            this.TabControlEquipos.Controls.Add(this.tabFechas);
+            this.TabControlEquipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TabControlEquipos.Location = new System.Drawing.Point(340, 251);
+            this.TabControlEquipos.Margin = new System.Windows.Forms.Padding(2);
+            this.TabControlEquipos.Name = "TabControlEquipos";
+            this.TabControlEquipos.SelectedIndex = 0;
+            this.TabControlEquipos.Size = new System.Drawing.Size(589, 302);
+            this.TabControlEquipos.TabIndex = 13;
             // 
             // Equipos
             // 
@@ -269,9 +249,7 @@ namespace Econosim
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TabControlEquipos);
-            this.Controls.Add(this.comboBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(35, 25);
             this.Name = "Equipos";
@@ -288,16 +266,13 @@ namespace Econosim
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.tabEquipo.ResumeLayout(false);
-            this.TabControlEquipos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.TabControlEquipos.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
