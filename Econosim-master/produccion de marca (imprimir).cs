@@ -53,10 +53,6 @@ namespace Econosim
             printDocument1.Print();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
@@ -109,7 +105,6 @@ namespace Econosim
         }
 
 
-
         private void button2_Click(object sender, EventArgs e)
         {
             lbl_espere.Visible = true;
@@ -117,15 +112,6 @@ namespace Econosim
             exportaraexcel(dataGridView1);
         }
 
-        private void lbl_espere_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Imprimir_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {

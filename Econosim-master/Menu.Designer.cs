@@ -106,7 +106,6 @@ namespace Econosim
             this.lblBienvenida.Size = new System.Drawing.Size(92, 31);
             this.lblBienvenida.TabIndex = 2;
             this.lblBienvenida.Text = "label2";
-            this.lblBienvenida.Click += new System.EventHandler(this.lblBienvenida_Click);
             // 
             // panel3
             // 
@@ -115,7 +114,7 @@ namespace Econosim
             this.panel3.Controls.Add(this.circlebutton5);
             this.panel3.Location = new System.Drawing.Point(139, 125);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(811, 405);
+            this.panel3.Size = new System.Drawing.Size(811, 516);
             this.panel3.TabIndex = 4;
             // 
             // circlebutton5
@@ -220,7 +219,7 @@ namespace Econosim
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(963, 609);
+            this.ClientSize = new System.Drawing.Size(963, 655);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel11);
@@ -234,7 +233,6 @@ namespace Econosim
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Menu_Load);
             this.Shown += new System.EventHandler(this.Menu_Shown);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();

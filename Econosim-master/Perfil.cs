@@ -20,21 +20,11 @@ namespace Econosim
 
         CL_ConexiónBD conexiónBD = new CL_ConexiónBD();
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
             Form Inicio = new Inicio();
             Inicio.Show();
             this.Close();
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void Perfil_Load(object sender, EventArgs e)
@@ -58,7 +48,7 @@ namespace Econosim
 
         private void label7_Click(object sender, EventArgs e)
         {
-            Form Menu = new Menu(/*""*/);
+            Form Menu = new Menu();
             Menu.Show();
             this.Close();
         }

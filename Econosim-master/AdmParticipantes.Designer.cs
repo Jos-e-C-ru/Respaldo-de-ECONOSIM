@@ -192,7 +192,7 @@
             this.cmbTipodeUsu.Name = "cmbTipodeUsu";
             this.cmbTipodeUsu.Size = new System.Drawing.Size(180, 21);
             this.cmbTipodeUsu.TabIndex = 17;
-            this.cmbTipodeUsu.SelectedIndexChanged += new System.EventHandler(this.cmbTipodeUsu_SelectedIndexChanged);
+
             // 
             // txtnombreAdm
             // 
@@ -362,7 +362,7 @@
             this.dgvparticipantesAdm.Size = new System.Drawing.Size(490, 366);
             this.dgvparticipantesAdm.TabIndex = 3;
             this.dgvparticipantesAdm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvparticipantesAdm_CellClick);
-            this.dgvparticipantesAdm.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvparticipantesAdm_CellContentClick);
+           
             // 
             // label7
             // 

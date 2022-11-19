@@ -20,46 +20,12 @@ namespace Econosim
 
         CL_ConexiónBD conexion = new CL_ConexiónBD();
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Menu Menu = new Menu(/*""*/);
+            Menu Menu = new Menu();
             Menu.Show();
             this.Hide();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Equipos_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Equipos_Shown(object sender, EventArgs e)

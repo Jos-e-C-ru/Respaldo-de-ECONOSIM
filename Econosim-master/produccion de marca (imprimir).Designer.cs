@@ -84,7 +84,7 @@
             this.groupBox1.Size = new System.Drawing.Size(843, 534);
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+
             // 
             // btn_eliminar
             // 
@@ -141,7 +141,7 @@
             this.Imprimir.Size = new System.Drawing.Size(55, 42);
             this.Imprimir.TabIndex = 46;
             this.Imprimir.UseVisualStyleBackColor = true;
-            this.Imprimir.Click += new System.EventHandler(this.Imprimir_Click);
+
             // 
             // button2
             // 
@@ -191,7 +191,7 @@
             this.lbl_espere.TabIndex = 58;
             this.lbl_espere.Text = "label3";
             this.lbl_espere.Visible = false;
-            this.lbl_espere.Click += new System.EventHandler(this.lbl_espere_Click);
+
             // 
             // printDocument1
             // 

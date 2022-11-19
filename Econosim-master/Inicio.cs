@@ -68,6 +68,7 @@ namespace Econosim
             }
         }
 
+
         private void controlBotones()
         {
             if (txtUsuario.Text.Trim() != string.Empty && txtUsuario.Text.All(Char.IsLetter))
@@ -94,7 +95,6 @@ namespace Econosim
 
             if (txtContrasena.Text.Trim() != string.Empty)
             {
-                //btnLogin.Enabled = true;
                 errorProvider1.SetError(txtContrasena, "");
             }
             else if (txtContrasena.Text == string.Empty)

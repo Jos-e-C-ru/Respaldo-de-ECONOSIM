@@ -79,7 +79,7 @@ namespace Econosim
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 61;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+
             // 
             // pictureBox4
             // 
@@ -116,7 +116,7 @@ namespace Econosim
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 58;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+ 
             // 
             // pictureBox1
             // 
@@ -255,7 +255,6 @@ namespace Econosim
             this.Name = "Equipos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Equuipos";
-            this.Load += new System.EventHandler(this.Equipos_Load);
             this.Shown += new System.EventHandler(this.Equipos_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

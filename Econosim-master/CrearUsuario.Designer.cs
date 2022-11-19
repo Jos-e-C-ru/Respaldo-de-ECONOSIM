@@ -200,7 +200,7 @@ namespace Econosim
             this.GroupBox1.TabIndex = 5;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "DATOS PERSONALES";
-            this.GroupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
+
             // 
             // txtNuevoCorreo
             // 
@@ -247,7 +247,7 @@ namespace Econosim
             this.Label2.Size = new System.Drawing.Size(58, 13);
             this.Label2.TabIndex = 1;
             this.Label2.Text = "Apellidos";
-            this.Label2.Click += new System.EventHandler(this.Label2_Click);
+
             // 
             // Label1
             // 
