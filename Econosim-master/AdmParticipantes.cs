@@ -33,16 +33,8 @@ namespace Econosim
 
         private void AdmParticipantes_Load(object sender, EventArgs e)
         {
-            /*  string query = "select * from usuario";
-              SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-              DataTable dt = new DataTable();
-              adapter.Fill(dt);
-              dgvparticipantesAdm.DataSource = dt;*/
             conexion.abrir();
             conexion.cargarDatos(dgvparticipantesAdm, "usuario");
-
-
-
         }
 
         private void dgvparticipantesAdm_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -58,49 +50,7 @@ namespace Econosim
 
         }
 
-        private void btnagregarAdm_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        private void btnmodificarAdm_Click(object sender, EventArgs e)
-        {
-           
-
-
-        }
-
-        private void btneliminarAdm_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnlimpiarAdm_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void dgvparticipantesAdm_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void txtusuarioId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbTipodeUsu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+ 
 
         private void label10_Click(object sender, EventArgs e)
         {

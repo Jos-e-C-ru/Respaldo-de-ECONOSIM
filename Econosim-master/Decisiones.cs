@@ -44,7 +44,7 @@ namespace Econosim
 
         private void txtPresupuesto_TextChanged(object sender, EventArgs e)
         {
-            Presupuesto.presupuesto = Convert.ToDouble(txtPresupuesto.Text.Trim());
+         
         }
 
         private void Decisiones_Load(object sender, EventArgs e)

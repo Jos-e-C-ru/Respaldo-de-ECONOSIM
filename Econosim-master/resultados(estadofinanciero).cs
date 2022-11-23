@@ -13,9 +13,9 @@ namespace Econosim
 {
     public partial class resultados_estadofinanciero_ : Form
     {
-        SqlConnection con = new SqlConnection("server=DESKTOP-LPK0UAA;integrated security=True; database = proyecto_grupo_#3");
+        SqlConnection con = new SqlConnection("server= localhost;integrated security=True; database = proyecto_grupo_#3");
 
-        string SSCadenaConexion = "server=DESKTOP-LPK0UAA;integrated security=True; database = proyecto_grupo_#3";
+        string SSCadenaConexion = "server= localhost;integrated security=True; database = proyecto_grupo_#3";
         public resultados_estadofinanciero_()
         {
             InitializeComponent();

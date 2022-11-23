@@ -244,7 +244,6 @@ namespace Econosim
             this.label5.Size = new System.Drawing.Size(122, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "Miembros de Equipo";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button6
             // 

@@ -14,9 +14,9 @@ namespace Econosim
 {
     public partial class resultados_informacion_de_costos_ : Form
     {
-        string SSCadenaConexion = "Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ";
+        string SSCadenaConexion = "Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ";
 
-        SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+        SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
         public resultados_informacion_de_costos_()
         {
             InitializeComponent();
@@ -113,7 +113,7 @@ namespace Econosim
 
                 else
                 {
-                    using (SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
+                    using (SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
                     {
                         SqlCommand cmd = new SqlCommand("INSERT INTO informe_de_costes(descripcion_costes, valor_costes, total_costes, ID_responsabilidad_social) values ('" + textBox1.Text + "','" + Convert.ToInt32(textBox2.Text) + "','" + Convert.ToInt32(textBox3.Text) + "','" + Convert.ToInt32(comboBox1.Text) + "')", con);
 

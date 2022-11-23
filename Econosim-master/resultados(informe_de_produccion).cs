@@ -13,7 +13,7 @@ namespace Econosim
 {
     public partial class resultados_informe_de_produccion_ : Form
     {
-        string SSCadenaConexion = "Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ";
+        string SSCadenaConexion = "Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ";
 
         public resultados_informe_de_produccion_()
         {

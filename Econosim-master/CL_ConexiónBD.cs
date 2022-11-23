@@ -32,7 +32,6 @@ namespace Econosim
             try
             {
                 sc.Open();
-                // MessageBox.Show("CONEXION ABIERTA");
             }
             catch (Exception Ex)
             {
@@ -81,7 +80,6 @@ namespace Econosim
         public void cerrar()
         {
             sc.Close();
-            //MessageBox.Show("CONEXION CERRADA");
         }
 
 

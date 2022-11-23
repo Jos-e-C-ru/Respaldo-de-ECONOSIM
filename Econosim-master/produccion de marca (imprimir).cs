@@ -23,7 +23,7 @@ namespace Econosim
         {
             try
             {
-                SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+                SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
                 SqlCommand cmd = new SqlCommand("delete from produccion_marca where ID_produccion=" + dataGridView1.SelectedRows[0].Cells[0].Value, con);
                 cmd.CommandType = CommandType.Text;
                 con.Open();
@@ -37,7 +37,7 @@ namespace Econosim
             }
         }
 
-        SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+        SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
 
         private void produccion_de_marca__imprimir__Load(object sender, EventArgs e)
         {
@@ -53,10 +53,6 @@ namespace Econosim
             printDocument1.Print();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
@@ -109,7 +105,6 @@ namespace Econosim
         }
 
 
-
         private void button2_Click(object sender, EventArgs e)
         {
             lbl_espere.Visible = true;
@@ -117,15 +112,6 @@ namespace Econosim
             exportaraexcel(dataGridView1);
         }
 
-        private void lbl_espere_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Imprimir_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {

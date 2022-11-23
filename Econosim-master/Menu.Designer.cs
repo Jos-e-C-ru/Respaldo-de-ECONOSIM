@@ -32,7 +32,6 @@ namespace Econosim
             this.button6 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.lblBienvenida = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.circlebutton5 = new Materiasles_1.circlebutton();
@@ -77,7 +76,6 @@ namespace Econosim
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
             this.panel11.Controls.Add(this.button6);
             this.panel11.Controls.Add(this.label3);
-            this.panel11.Controls.Add(this.label4);
             this.panel11.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.panel11.Location = new System.Drawing.Point(1, 1);
             this.panel11.Name = "panel11";
@@ -97,20 +95,6 @@ namespace Econosim
             this.label3.TabIndex = 9;
             this.label3.Text = "Menú";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(26, 32);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 29);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Volver";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // lblBienvenida
             // 
             this.lblBienvenida.AutoSize = true;
@@ -122,7 +106,6 @@ namespace Econosim
             this.lblBienvenida.Size = new System.Drawing.Size(92, 31);
             this.lblBienvenida.TabIndex = 2;
             this.lblBienvenida.Text = "label2";
-            this.lblBienvenida.Click += new System.EventHandler(this.lblBienvenida_Click);
             // 
             // panel3
             // 
@@ -131,7 +114,7 @@ namespace Econosim
             this.panel3.Controls.Add(this.circlebutton5);
             this.panel3.Location = new System.Drawing.Point(139, 125);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(811, 405);
+            this.panel3.Size = new System.Drawing.Size(811, 516);
             this.panel3.TabIndex = 4;
             // 
             // circlebutton5
@@ -236,7 +219,7 @@ namespace Econosim
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(963, 609);
+            this.ClientSize = new System.Drawing.Size(963, 655);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel11);
@@ -250,7 +233,6 @@ namespace Econosim
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Menu_Load);
             this.Shown += new System.EventHandler(this.Menu_Shown);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
@@ -276,7 +258,6 @@ namespace Econosim
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblBienvenida;
         private Materiasles_1.circlebutton circlebutton5;

@@ -13,15 +13,13 @@ namespace Econosim
 {
     public partial class Menu : Form
     {
-        //String nombre_usuario;
-
         Inicio inicio = new Inicio();
+        InicioSesión inicioSesión = new InicioSesión();
         private string v;
 
-        public Menu(/*String usuario*/)
+        public Menu()
         {
             InitializeComponent();
-            //nombre_usuario = usuario;
         }
 
         public Menu(string v)
@@ -29,15 +27,6 @@ namespace Econosim
             this.v = v;
         }
 
-        private void Menu_Load(object sender, EventArgs e)
-        {
-            lblBienvenida.Text = ("Bienvenido, " + InicioSesión.nombre + " " + InicioSesión.apellido);
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -50,26 +39,6 @@ namespace Econosim
             this.Close();
             inicio.Show();
 
-        }
-
-        private void btnPerfil_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnDecisiones_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnEquipos_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnResultados_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void Menu_Shown(object sender, EventArgs e)
@@ -130,30 +99,6 @@ namespace Econosim
             this.Hide();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblBienvenida_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void circlebutton5_Click(object sender, EventArgs e)
         {

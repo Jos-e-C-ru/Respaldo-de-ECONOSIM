@@ -84,10 +84,6 @@ namespace Econosim
             this.Hide();
         }
 
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
@@ -100,9 +96,5 @@ namespace Econosim
             txtNuevoNombre.Focus();
         }
 
-        private void GroupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

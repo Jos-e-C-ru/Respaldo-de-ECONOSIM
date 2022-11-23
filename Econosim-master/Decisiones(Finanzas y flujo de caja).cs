@@ -215,7 +215,7 @@ namespace Econosim
 
                 else
                 {
-                    using (SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
+                    using (SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true "))
                     {
                         SqlCommand cmd = new SqlCommand ("INSERT INTO finanza_flujo_de_caja (ID_instalacion, ID_estado, ID_informe_mercado, ID_informe_costes, ID_compensacion, finanza_total, ID_informe_rrhh, ID_ratio, ID_responsabilidad_social) values ('" + Convert.ToInt32(comboBox1.Text) + "','" + Convert.ToInt32(comboBox2.Text) + "','" + Convert.ToInt32(comboBox3.Text) + "','" + Convert.ToInt32(comboBox4.Text) + "','" + Convert.ToInt32(comboBox5.Text) + "','" + Convert.ToInt32(textBox1.Text) + "','" + Convert.ToInt32(comboBox6.Text) + "','" + Convert.ToInt32(comboBox7.Text) + "','" + Convert.ToInt32(comboBox8.Text) + "')",  con);
 

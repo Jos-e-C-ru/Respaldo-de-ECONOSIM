@@ -19,7 +19,7 @@ namespace Econosim
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+        SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
 
         private void insalacion_de_produccion__imprimir_1_Load(object sender, EventArgs e)
         {
@@ -99,7 +99,7 @@ namespace Econosim
         {
             try
             {
-                SqlConnection con = new SqlConnection("Data Source = DESKTOP-LPK0UAA; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
+                SqlConnection con = new SqlConnection("Data Source = localhost; Initial Catalog = proyecto_grupo_#3; Integrated security = true ");
                 SqlCommand cmd = new SqlCommand("delete from instalacion_de_produccion where ID_instalacion=" + dataGridView1.SelectedRows[0].Cells[0].Value, con);
                 cmd.CommandType = CommandType.Text;
                 con.Open();
